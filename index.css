@@ -10,6 +10,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
 }
 
@@ -19,10 +20,6 @@ body {
     position: relative;
 }
 
-.dropdown-menu {
-
-    z-index: 1060;
-}
 
 .navbar-custom {
     background-color: #dbffcc;
@@ -45,7 +42,7 @@ body {
 }
 
 #logo {
-    height: 20vh;
+    height: 50%;
 }
 
 button {
@@ -136,6 +133,10 @@ button {
 
 
 .producto-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     border: none;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -155,6 +156,13 @@ button {
 .btn-producto:hover {
     background-color: #3b8a3f;
     color: white;
+}
+
+.producto-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .logo-obra {
@@ -220,6 +228,7 @@ button {
 .carousel-item {
     position: relative;
     height: 100%;
+    overflow: hidden;
 }
 
 .carousel-item img {
@@ -233,7 +242,6 @@ button {
 }
 
 .carousel-inner {
-    height: 400px;
     overflow: visible !important;
 
 }
